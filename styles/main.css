@@ -1,0 +1,150 @@
+body {
+    text-align: center;
+    /* background-color: rgba(205, 165, 129, 1); */
+    background-color: rgb(255, 219, 181);
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+}
+/* Header */
+nav {
+    display: flex;
+    flex-direction: row;
+
+    /* 把nav固定在頁面頂部，並讓它橫跨整個頁面 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    /* 預設為隱藏狀態，並且向上移動100% */ 
+    transform: translateY(-100%);
+    opacity: 0;
+}
+nav.show {
+    /* nav.visible 也可以 */
+    /* 顯示nav，並且移動回原位 */
+    /* 顯示需要js */
+    transform: translateY(0);
+    opacity: 1;
+}
+/* #pic {
+    width: 150px;
+    height: 150px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+} */
+h3 {
+    margin-top: -20px;
+}
+#logo {
+    width: 150px;
+    height: 150px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+#referral-code {
+    /* background-color: rgba(215, 215, 215, 0.5); */
+    background-color: rgba(123, 60, 21, 0.15);
+    box-shadow: none;
+    padding: 5px;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 10px;
+}
+/* Header End */
+
+/* Main */
+#productSection {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 90%;
+    max-width: 400px;
+
+    text-align: center;
+    margin: 20px auto;
+}
+/* .products {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+} */
+.product-image {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+}
+div {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.links, #joinme {
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+div a {
+    /* 把a變成區塊填滿外包的div */
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+#messegebtn {
+    border-style: none;
+    background-color: rgba(220, 220, 220, 0.5);
+    border: 1px solid white;
+    max-width: 100px;
+    margin-bottom: 20px;
+    
+}
+/* iframe {
+    margin: 20px auto;
+} */
+hr {
+    width: 85%;
+    max-width: 350px;
+    margin: 20px auto;
+    color: rgba(0, 0, 0, 0.2);
+}
+/* Main End */
+
+/* Footer */
+footer {
+    margin-bottom: 100px;
+}
+svg {
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+}
+#joinme {
+    max-width: 1000px; 
+    position: fixed; 
+    bottom: 10px; 
+    /* 水平置中 */
+    left: 50%;
+    transform: translateX(-50%);
+    /* 預設陰影：微弱的貼地陰影 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
