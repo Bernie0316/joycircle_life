@@ -1,10 +1,17 @@
+* {
+    /* border: solid 1px black; */
+    box-sizing: border-box;
+}
+
 body {
     text-align: center;
-    /* background-color: rgba(205, 165, 129, 1); */
     background-color: rgb(255, 219, 181);
     max-width: 700px;
     margin: 0 auto;
     font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+}
+#en-m {
+    font-family: 'TW-kai', "標楷體", "BiauKai", "DFKai-SB", "Kaiti TC", sans-serif;
 }
 /* Header */
 nav {
@@ -47,6 +54,17 @@ h3 {
     margin: 0 auto;
     margin-top: 50px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+    /* 禁用 iOS 和 Android 的長按快顯功能表（儲存圖片、拷貝等） */
+    -webkit-touch-callout: none;
+    
+    /* 禁用使用者選取功能 */
+    -webkit-user-select: none;
+    user-select: none;
+    
+    /* 禁用圖片拖曳行為（防止直接拖到桌面或別的分頁） */
+    -webkit-user-drag: none;
+    pointer-events: none; /* 關鍵：讓滑鼠與手指事件直接穿透圖片 */
 }
 #referral-code {
     /* background-color: rgba(215, 215, 215, 0.5); */
@@ -67,31 +85,17 @@ h3 {
     flex-direction: row;
     gap: 15px;
     width: 90%;
-    max-width: 400px;
-
     text-align: center;
-    margin: 20px auto;
-}
-/* .products {
-    max-width: 300px;
-    max-height: 300px;
-    margin: 10px auto;
-    border-radius: 10px;
-    background-color: white;
-    
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
-} */
+    margin: 10px auto;
+}
 .product-image {
-    padding: 10px;
+    padding: 5px;
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
     height: auto;
     border-radius: 5px;
     background-color: white;
-    padding: 5px;
 }
 div {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -118,9 +122,6 @@ div a {
     margin-bottom: 20px;
     
 }
-/* iframe {
-    margin: 20px auto;
-} */
 hr {
     width: 85%;
     max-width: 350px;
