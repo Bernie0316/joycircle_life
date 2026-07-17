@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chiron+GeRound+TC:wght@400;700&display=swap');
 * {
     /* border: solid 1px black; */
     box-sizing: border-box;
 }
-
 body {
     text-align: center;
     background-color: rgb(255, 219, 181);
     max-width: 700px;
     margin: 0 auto;
-    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+    font-family: 'Chiron GeRound TC', 'Noto Sans TC', sans-serif;
 }
 #en-m {
     font-family: 'LXGW WenKai TC', sans-serif;
 }
+
 /* Header */
 nav {
     display: flex;
@@ -35,17 +36,6 @@ nav.show {
     /* 顯示需要js */
     transform: translateY(0);
     opacity: 1;
-}
-/* #pic {
-    width: 150px;
-    height: 150px;
-    background-color: lightgray;
-    border-radius: 50%;
-    margin: 0 auto;
-    margin-top: 50px;
-} */
-h3 {
-    margin-top: -20px;
 }
 #logo {
     width: 150px;
@@ -77,10 +67,14 @@ h3 {
     margin: 10px auto;
     width: 50%;
     border-radius: 10px;
+    font-size: 0.9rem;
 }
 /* Header End */
 
 /* Main */
+#reco-product {
+    font-size: 0.9rem;
+}
 #productSection {
     display: flex;
     flex-direction: row;
