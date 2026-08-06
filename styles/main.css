@@ -6,40 +6,39 @@
 }
 body {
     text-align: center;
-    background-color: rgb(255, 219, 181);
+    background-color: #f9d9b8;
+    color: black;
     max-width: 700px;
     margin: 0 auto;
     font-family: 'Chiron GeRound TC', 'Noto Sans TC', sans-serif;
 }
-#en-m {
-    font-family: 'LXGW WenKai TC', sans-serif;
+body p {
+    color: #6f655d;
 }
 
 /* Header */
-nav {
-    display: flex;
-    flex-direction: row;
-
-    /* 把nav固定在頁面頂部，並讓它橫跨整個頁面 */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    
-    /* 預設為隱藏狀態，並且向上移動100% */ 
-    transform: translateY(-100%);
-    opacity: 0;
+.sectionTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #3d2b1d;
 }
-nav.show {
-    /* nav.visible 也可以 */
-    /* 顯示nav，並且移動回原位 */
-    /* 顯示需要js */
-    transform: translateY(0);
-    opacity: 1;
+.sectionTitle::before, .sectionTitle::after {
+    content: " ⎯⎯ ";
+    margin: 0 5px;
+}
+.en-m {
+    font-family: 'LXGW WenKai TC', sans-serif;
+}
+#slog1 {
+    margin-bottom: -10px;
+}
+#slog2 {
+    margin-top: -10px;
 }
 #logo {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: lightgray;
     border-radius: 50%;
     margin: 0 auto;
@@ -95,7 +94,6 @@ nav.show {
 }
 #copyBtn.success {
     width: 70px; /* 讓按鈕逐漸擴展成有空間容納「複製成功!」的寬度 */
-    background-color: rgba(0, 135, 196, 0.1) !important;
     transform: scale(1.05); /* 輕微放大彈跳感 */
 }
 
@@ -122,21 +120,6 @@ nav.show {
 /* Header End */
 
 /* Main */
-#reco-product {
-    font-size: 0.9rem;
-
-    padding: 5px;
-    width: fit-content;
-    max-width: 300px;
-    margin: 10px auto;
-    display: flex;
-    align-items: center;
-    position: relative;
-    
-    border-radius: 10px;
-    /* border: black solid 0.5px; */
-}
-
 #productSection {
     display: flex;
     flex-direction: row;
@@ -152,7 +135,7 @@ nav.show {
     max-width: 200px;
     height: auto;
     border-radius: 5px;
-    background-color: white;
+    background-color: #fffdf9;
 }
 div {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -163,7 +146,7 @@ div {
     margin: 10px auto;
     padding: 10px;
     border-radius: 10px;
-    background-color: white;
+    background-color: #fffdf9;
 }
 div a {
     /* 把a變成區塊填滿外包的div */
@@ -171,19 +154,12 @@ div a {
     color: black;
     text-decoration: none;
 }
-#messegebtn {
-    border-style: none;
-    background-color: rgba(220, 220, 220, 0.5);
-    border: 1px solid white;
-    max-width: 100px;
-    margin-bottom: 20px;
-    
-}
 hr {
     width: 85%;
     max-width: 350px;
     margin: 20px auto;
-    color: rgba(0, 0, 0, 0.2);
+    /* color: rgba(0, 0, 0, 0.2); */
+    color: #dec6ae;
 }
 /* Main End */
 
@@ -195,6 +171,8 @@ svg {
     width: 30px;
     height: 30px;
     margin-top: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 #joinme {
     max-width: 1000px; 
