@@ -15,18 +15,28 @@
         <section id="hero">
             <img id="logo" src="./image/logo.png" alt="JoyCircle">
             <h3>禾悅團隊 | JoyCircle</h3>
-            <p id="en-m">🔹艾多美經營者🔹<br>
+            <p id="en-m">艾多美經營者<br>
                 「一個人走得快，
                 一群人走得遠」<br>
                 禾悅與您<br>
-                <b>「豐盛成長，喜悅同行」</b><br>
+                「豐盛成長，喜悅同行」<br>
             </p>
-            <div id="referral-code">推薦序號：46330696</div>
+            <div id="referral-code">推薦序號：46330696
+                <!-- data-text 裡面放你真正想要讓人複製的內容 -->
+                <button id="copyBtn" data-text="46330696">
+                    <span class="btn-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy-icon lucide-copy">
+                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
+                        </svg>
+                    </span>
+                </button>
+            </div>
         </section>
     </header>
     <hr>
     <main>
-        <p id="reco-product">🩵 推薦商品 🩵</p>
+        <p id="reco-product">🩵推薦商品🩵</p>
         <section id="productSection" class="button">
             <a href="https://tw.atomy.com/product/W18910" target="_blank">
                 <img class="product-image" src="./image/products/aircleaner.jpg" alt="空氣清淨機">
@@ -63,5 +73,6 @@
     </footer>
     <div id="joinme"><a href="https://m-tw.atomy.com/gate/join/easyreg/v2/46330696">加入我們 | ATOMY</a></div>
     <!-- <script src="/scripts/main.js"></script> -->
+    <script src="/scripts/copy.js"></script>
 </body>
 </html>

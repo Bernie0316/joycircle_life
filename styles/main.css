@@ -38,8 +38,8 @@ nav.show {
     opacity: 1;
 }
 #logo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     background-color: lightgray;
     border-radius: 50%;
     margin: 0 auto;
@@ -58,23 +58,85 @@ nav.show {
     pointer-events: none; /* 關鍵：讓滑鼠與手指事件直接穿透圖片 */
 }
 #referral-code {
-    /* background-color: rgba(215, 215, 215, 0.5); */
     background-color: rgba(123, 60, 21, 0.15);
     box-shadow: none;
     padding: 5px;
-    width: 100%;
-    max-width: 200px;
     margin: 10px auto;
-    width: 50%;
     border-radius: 10px;
     font-size: 0.9rem;
+
+    display: flex;
+    align-items: center;     
+    justify-content: center;
+    white-space: nowrap; /* 防止文字換行 */
+
+    width: fit-content;
+    max-width: 300px;
+
+    gap: 5px;
 }
+
+/* copy section */
+#copyBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    padding: 0;
+    background-color: rgba(0, 135, 196, 0.0); /* 預設藍色 */
+    color: black;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+                background-color 0.3s ease,
+                transform 0.2s ease;
+}
+#copyBtn.success {
+    width: 70px; /* 讓按鈕逐漸擴展成有空間容納「複製成功!」的寬度 */
+    background-color: rgba(0, 135, 196, 0.1) !important;
+    transform: scale(1.05); /* 輕微放大彈跳感 */
+}
+
+.btn-text svg {
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+}
+
+/* 滑鼠懸停浮空感 */
+#copyBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 135, 196, 0.1); /* 淡藍色背景 */
+}
+
+/* 點擊時下壓回饋 */
+#copyBtn:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+/* copy section end */
+
 /* Header End */
 
 /* Main */
 #reco-product {
     font-size: 0.9rem;
+
+    padding: 5px;
+    width: fit-content;
+    max-width: 300px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+    border-radius: 10px;
+    /* border: black solid 0.5px; */
 }
+
 #productSection {
     display: flex;
     flex-direction: row;
