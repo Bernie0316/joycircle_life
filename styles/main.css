@@ -17,11 +17,16 @@ body p {
 }
 
 /* Header */
+h2 {
+    margin-top: -3px;
+    font-size: 1.2rem;
+}
 .sectionTitle {
     font-size: 1.2rem;
     font-weight: bold;
     margin: 10px 0;
-    color: #3d2b1d;
+    /* color: #3d2b1d; */
+    color: rgba(61, 43, 29, 0.8);
 }
 .sectionTitle::before, .sectionTitle::after {
     content: " ⎯⎯ ";
@@ -31,11 +36,11 @@ body p {
     font-family: 'LXGW WenKai TC', sans-serif;
 }
 #slog2 {
-    margin-top: -10px;
+    margin-top: -13px;
 }
 #logo {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     background-color: lightgray;
     border-radius: 50%;
     margin: 0 auto;
@@ -163,6 +168,9 @@ hr {
 /* Footer */
 footer {
     margin-bottom: 100px;
+}
+footer a {
+    text-decoration: none;
 }
 svg {
     width: 30px;
