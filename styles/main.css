@@ -6,25 +6,22 @@
 }
 body {
     text-align: center;
-    background-color: #f9d9b8;
+    /* background-color: #f9d9b8; */
+    background-color: rgba(249, 217, 184, 0.55);
     color: black;
     max-width: 700px;
     margin: 0 auto;
     font-family: 'Chiron GeRound TC', 'Noto Sans TC', sans-serif;
 }
-body p {
-    color: #6f655d;
-}
 
 /* Header */
 h2 {
-    margin-top: -1px;
     font-size: 1.2rem;
 }
 .sectionTitle {
     font-size: 1.2rem;
     font-weight: bold;
-    color: rgba(61, 43, 29, 0.8);
+    color: rgba(61, 43, 29, 0.85);
     display: flex;          /* 關鍵：開啟 Flexbox，讓兩側橫線跟文字排成一橫排 */
     align-items: center;     /* 讓橫線在文字的垂直正中央 */
     justify-content: center;
@@ -37,14 +34,17 @@ h2 {
     border-bottom: 1px solid rgba(61, 43, 29, 0.8);
 }
 .sectionTitle::before {
-    margin-left: 70px;      /* 左邊橫線與文字的間距 */
+    margin-right: 20px;
+    margin-left: 50px;      /* 左邊橫線與文字的間距 */
 }
 
 .sectionTitle::after {
-    margin-right: 70px;       /* 右邊橫線與文字的間距 */
+    margin-right: 50px;       /* 右邊橫線與文字的間距 */
+    margin-left: 20px;
 }
 
 .en-m {
+    color: #5c534b;
     font-family: 'LXGW WenKai TC', sans-serif;
 }
 #slog2 {
@@ -126,9 +126,6 @@ h2 {
 /* Header End */
 
 /* Main */
-#reco-product {
-    color: #3d2b1d;
-}
 #productSection {
     display: flex;
     flex-direction: row;

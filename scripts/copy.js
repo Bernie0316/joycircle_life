@@ -15,7 +15,7 @@ document.getElementById('copyBtn').addEventListener('click', function() {
     setTimeout(() => {
       btn.classList.remove('success');
       btnText.innerHTML = originalContent; // 恢復原本的按鈕文字
-    }, 1500);
+    }, 700);
   }).catch(err => {
     // 萬一瀏覽器不支援或封鎖剪貼簿權限時的防錯處理
     console.error('複製失敗: ', err);
